@@ -1,94 +1,98 @@
- body{        
-        padding-top: 100px;
-        padding-bottom: 40px;
-		font-family: Arial;
-    }
-    .container{
-        width: 90%;
-        margin: 0 auto; /* Center the DIV horizontally */
-    }
-    .fixed-header, .fixed-footer{
-        width: 100%;
-        position: fixed;        
-        background: #5eb7b7;
-        padding: 10px 0;
-        color: 	#fdfbfb;
-    }
-    .fixed-header{
-        top: 0;
-		left: 0;
-    }
-    .fixed-footer{
-        bottom: 0;
-		left: 0;
-    }    
-	ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #96d1c7;
-	}
+body {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-family: Arial;
+}
 
-	li {
-	float: left;
-	}
+.container {
+    width: 90%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
 
-	li a 
-	{
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
+.fixed-header, .fixed-footer {
+    width: 100%;
+    position: fixed;
+    background: #5eb7b7;
+    padding: 10px 0;
+    color: #fdfbfb;
+}
 
-	li a:hover 
-	{
-		background-color: #96d1c7;
-	}
-    /* Some more styles to beutify this example */
-    nav a{
-        color: 	#fdfbfb;
+.fixed-header {
+    top: 0;
+    left: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #96d1c7;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
-        padding: 10px 60px;
-        display: inline-block;
-    }
-	.container p{
-        line-height: 50px; /* Create scrollbar to test positioning */
     }
 
-	* {
-	box-sizing: border-box;
-	}
+        li a:hover {
+            background-color: #96d1c7;
+        }
+/* Some more styles to beutify this example */
+nav a {
+    color: #fdfbfb;
+    text-decoration: none;
+    padding: 10px 60px;
+    display: inline-block;
+}
 
-	form.example input[type=text] {
-		padding: 100px;
-		font-size: 17px;
-		border: 1px solid grey;
-		float: left;
-		width: 80%;
-		background: #f1f1f1;
-	}
+.container p {
+    line-height: 50px; /* Create scrollbar to test positioning */
+}
 
-	form.example button {
-		float: left;
-		width: 20%;
-		padding: 10px;
-		background: #96d1c7;
-		color: white;
-		font-size: 17px;
-		border: 1px solid grey;
-		border-left: none;
-		cursor: pointer;
-	}
+* {
+    box-sizing: border-box;
+}
 
-	form.example button:hover {
-		background: #0b7dda;
-	}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
 
-	form.example::after {
-		content: "";
-		clear: both;
-	display: table;
-	}
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #96d1c7;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+    form.example button:hover {
+        background: #0b7dda;
+    }
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}

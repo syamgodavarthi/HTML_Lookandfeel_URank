@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="C:\Users\HP\Desktop\Assignment3\searchbar.css">
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 100px;
+            padding: 0 20px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+<body>
+    <include src="C:\Users\HP\Desktop\Assignment3\headerfooter.html"></include>
+    <div class="fixed-header">
+        <div class="container">
+            <h1>
+                <a href="C:\Users\HP\Desktop\Assignment3\headerfooter.html">URank</a>
+            </h1>
+        </div>
+    </div>
+
+    <h1>Meet The Team...</h1>
+    <br>
+
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\HP\Desktop\Assignment3\venkat.jpg" alt="Venkata" style="width:100%">
+                <div class="container">
+                    <h2>Venkata Dasu</h2>
+                    <p class="title">Team member 1</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>vdasu@mail.usf.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\HP\Desktop\Assignment3\Syam.jpeg" alt="Syam" style="width:100%">
+                <div class="container">
+                    <h2>Syam Godavarthi</h2>
+                    <p class="title">Team member 2</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>syamg@mail.usf.edu</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\HP\Desktop\Assignment3\yunus.jpg" alt="Yunous" style="width:100%">
+                <div class="container">
+                    <h2>Yunus Rouhan</h2>
+                    <p class="title">Team member 3</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>msalauddin@mail.usf.edu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-footer" align="center">
+        <div class="container">
+            Copyright &copy; 2019 URank &nbsp &nbsp &nbsp &nbsp &nbsp Reference : Department of Education
+        </div>
+    </div>
+</body>
+</html>
